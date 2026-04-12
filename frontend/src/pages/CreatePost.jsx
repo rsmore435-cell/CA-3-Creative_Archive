@@ -20,8 +20,7 @@ function CreatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        'http://localhost:5000/api/posts',
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/posts`,
         { title, content, type, genre },
         { headers: { Authorization: `Bearer ${token}` } }
       );

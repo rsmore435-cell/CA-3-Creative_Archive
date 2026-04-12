@@ -16,7 +16,7 @@ function EditPost() {
 
   // Fetch existing post data
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/posts/${id}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/api/posts/${id}`)
       .then(res => {
         setTitle(res.data.title);
         setContent(res.data.content);
@@ -39,8 +39,7 @@ function EditPost() {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(
-        `http://localhost:5000/api/posts/${id}`,
+      await axios.put(`${import.meta.env.VITE_API_URL}/api/posts/${id}`,
         { title, content, type, genre },
         { headers: { Authorization: `Bearer ${token}` } }
       );

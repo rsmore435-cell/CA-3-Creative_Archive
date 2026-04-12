@@ -11,7 +11,7 @@ function PostDetail() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/posts/${id}`)
+    axios.get(`${import.meta.env.VITE_API_URL}/api/posts/${id}`)
       .then(res => {
         setPost(res.data);
         setLoading(false);
@@ -24,7 +24,7 @@ function PostDetail() {
 
   const handleDelete = async () => {
     if (window.confirm('Are you sure you want to delete this post?')) {
-      await axios.delete(`http://localhost:5000/api/posts/${id}`, {
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/posts/${id}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       navigate('/');

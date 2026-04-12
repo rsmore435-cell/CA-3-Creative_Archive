@@ -8,7 +8,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/posts')
+    axios.get(`${import.meta.env.VITE_API_URL}/api/posts`)
       .then(res => {
         setPosts(res.data);
         setLoading(false);
