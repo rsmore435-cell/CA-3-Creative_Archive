@@ -25,7 +25,7 @@ function Register() {
 
   return (
     <div className="form-container">
-      <h2>Join The Archive ✨</h2>
+      <h2>Join The SwarLipi Vault ✨</h2>
       {error && <p className="error-msg">{error}</p>}
       {success && <p className="success-msg">{success}</p>}
       <div className="form-group">

@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        🎭 The Creative Archive
+        📜 SwarLipi Vault
       </Link>
       <div className="navbar-links">
         {token ? (

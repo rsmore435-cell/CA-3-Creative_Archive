@@ -26,8 +26,8 @@ function Home() {
   return (
     <div className="container">
       <div className="home-header">
-        <h1>🎭 The Creative Archive</h1>
-        <p>A sanctuary for poetry and lyrics</p>
+        <h1>📜 SwarLipi Vault</h1>
+        <p>Where poetry breathes and lyrics sing.</p>
       </div>
 
       <div className="filter-buttons">
