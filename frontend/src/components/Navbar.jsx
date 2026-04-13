@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <Link to="/" className="navbar-logo">
-        <img src="/swarlipi-vault-logo.svg" alt="SwarLipi Vault" height="48" />
+        <img src="/swarlipi-vault-logo.svg" alt="SwarLipi Vault" height="50" />
       </Link>
       <div className="navbar-links">
         {token ? (
