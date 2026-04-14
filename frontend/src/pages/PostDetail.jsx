@@ -38,7 +38,7 @@ function PostDetail() {
     <div className="container">
       <div className="post-detail">
         <p className="post-detail-type">
-          {post.type === 'poetry' ? '🌹 Poetry' : '🎵 Lyrics'}
+         {post.type === 'poetry' ? '🌹 Poetry' : post.type === 'lyrics' ? '🎵 Lyrics' : '📝 Articles'}
         </p>
         <h1 className="post-detail-title">{post.title}</h1>
         <p className="post-detail-meta">

@@ -4,7 +4,7 @@ function PostCard({ post }) {
   return (
     <div className="post-card">
       <div className="post-card-type">
-        {post.type === 'poetry' ? '🌹 Poetry' : '🎵 Lyrics'}
+        {post.type === 'poetry' ? '🌹 Poetry' : post.type === 'lyrics' ? '🎵 Lyrics' : '📝 Articles'}
       </div>
       <h3 className="post-card-title">{post.title}</h3>
       <p className="post-card-content">{post.content}</p>
