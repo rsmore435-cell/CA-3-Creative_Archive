@@ -47,7 +47,8 @@ function CreatePost() {
         <label>Type</label>
         <select value={type} onChange={e => setType(e.target.value)}>
           <option value="poetry">🌹 Poetry</option>
-          <option value="lyrics">🎵 Lyrics</option>
+          <option value="lyrics">🎵 Lyrics/Notations</option>
+          <option value="articles">📝 Articles</option>
         </select>
       </div>
       <div className="form-group">

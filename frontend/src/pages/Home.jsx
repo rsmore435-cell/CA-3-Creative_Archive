@@ -47,7 +47,13 @@ function Home() {
           className={`filter-btn ${filter === 'lyrics' ? 'active' : ''}`}
           onClick={() => setFilter('lyrics')}
         >
-          🎵 Lyrics
+          🎵 Lyrics/Notations
+        </button>
+        <button
+          className={`filter-btn ${filter === 'articles' ? 'active' : ''}`}
+          onClick={() => setFilter('articles')}
+        >
+          📝 Articles
         </button>
       </div>
 
